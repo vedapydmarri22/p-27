@@ -51,10 +51,10 @@ class PlayerArrow {
     image(this.image, 0, 0, this.width, this.height);
     pop();
 
-    /*if (this.body.velocity.x > 0 && this.body.position.x > 400) {
+    if (this.body.velocity.x > 0 && this.body.position.x > 400) {
       var position = [this.body.position.x, this.body.position.y];
       this.trajectory.push(position);
-    }*/
+    }
     
     /*if (this.body.velocity.x > 0 || this.body.position.x > 400) {
       var position = [this.body.position.x, this.body.position.y];
@@ -76,7 +76,7 @@ class PlayerArrow {
 
       //ellipse(this.trajectory[0], this.trajectory[1], 5, 5);
       //ellipse(trajectory[i][0], trajectory[i][1], 5, 5);
-      //ellipse(this.trajectory[i][0], this.trajectory[i][1], 5, 5);
+      ellipse(this.trajectory[i][0], this.trajectory[i][1], 5, 5);
       //ellipse(this.trajectory(i)(0), this.trajectory(i)(1), 5, 5);
       
     }
